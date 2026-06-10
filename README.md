@@ -1,8 +1,10 @@
 # Pulze Mini Tone Generator
 
 Generate **Hotone Pulze / Pulze Mini** guitar tones as `.prst` preset files from a JSON
-spec or a Python dict — or conversationally, as a Claude skill, using plain language
-("warm SRV blues lead") backed by complete reverse-engineered parameter catalogs.
+spec or a Python dict — or, the way this is meant to be used, conversationally: through
+Claude via the bundled skill, or any AI agent that can read the catalogs, using plain
+language ("warm SRV blues lead") backed by complete reverse-engineered parameter
+catalogs.
 
 Built and tested on a **Pulze Mini** (firmware V1.1.0). Community preset files from the
 larger **Pulze** (Luna/Eclipse) decode byte-identically — same envelope, same
@@ -135,6 +137,20 @@ unique algorithms covering the device's full effect set, some shared across mult
 slots — were swept this way. Screenshots were the silent handshake of the whole
 collaboration: I rarely wrote "confirmed," I just uploaded the picture.
 
+**The UID hunt.** Model identity itself was undocumented — every amp, cab, and effect
+ID, which category each belongs to, and which slots accept which pools all had to be
+established from nothing. The method: batches of numbered probe presets, each loading
+candidate UIDs from a numeric range sweep, sideloaded to the device in bulk. My entire
+reply for a batch was which preset numbers hit a real target — a named model on screen
+instead of a fallback. Sweep the full range until every target is found; for the last
+one or two stragglers, export that effect directly from the app and read its UID out
+of the file, then look for the logic in the assignment. Sometimes there is none. The
+economy move that made it bearable: the same confirmation screenshot already shows the
+knob panel, so every UID hit doubled as a knob-layout and factory-default capture —
+one photo, two data layers. The category byte fell out of the assembled map: it
+encodes algorithm family, and slots accept families, which is why FX1 and FX2 share
+pools at all.
+
 **Enum archaeology.** Rotary selectors (voicings, modes, keys) store as integer
 indices. The mapping from index to label was established by stepping a switch through
 every position and exporting each one — which is also how a wrong hypothesis
@@ -178,6 +194,11 @@ of device-verified presets byte-identically from their decoded recipes. That cor
 40 fixtures — ships in `tests/` and runs in CI. A preset's lifecycle is: self-test
 round-trip → ship → verify on device with screenshots → promote into the corpus.
 Nothing is "done" at "the script ran without errors."
+
+The honest scale of it: this was a lot of menial work. Generate a batch, sideload,
+photograph, reply with the hit numbers, repeat — dozens of sweeps across hundreds of
+models and knobs. The core reverse-engineering grind ran about a week of sustained
+sessions on a Claude Max 5× subscription driving Claude Opus 4.7. It all worked out.
 
 None of this is vibe coding. Vibe coding's defining feature is the absence of
 verification; this project has verification at every layer, against the physical
@@ -266,6 +287,19 @@ decode a fixture to a recipe, rebuild it, demand byte identity.
   Pass `"Off"` or the sentinel number; the writer handles both.
 - Disabled slots in real device exports carry **leftover bytes** from prior state — the
   firmware does not zero them. Never read wild preset files as default-value truth.
+
+## How this is meant to be used
+
+Through an agent. The bundled Claude skill is the front door, but any AI that can read
+the catalogs can drive this — you describe the tone, it composes the recipe, the writer
+makes the file. On first contact the agent offers a short guided interview to establish
+your baseline: rig, slots, exclusions, taste. Answer in plain language — any phrasing,
+any level of detail. It isn't a form with one correct answer per field; the agent reads
+context and fills the profile from whatever you give it, and you can revise any of it
+later just by saying so.
+
+The CLI and Python API below are deliberately minimal — a manual path for inspection
+and scripting. The expected driver is the agent.
 
 ## Install
 
@@ -425,6 +459,9 @@ MIT — see [LICENSE](LICENSE).
 - 安装：纯标准库 Python 3.9+，零依赖。`python3 -m pulze_tone --list` 自检；
   `--spec 配方.json -o output` 生成；`--decode 文件.prst` 反解为可编辑配方。
 - 生成的文件用 **Pulze Editor** 导入设备并存入用户槽位。
+- **预期用法：** 通过 Claude（内置技能）或任意 AI 代理对话式生成；首次使用有一段
+  引导式基线问答，可用任何自然语言自由作答 —— 不限定标准答案，代理会理解上下文并随时
+  按你的话修改；命令行仅作为最简手动通道。
 - **白盒自由度：** 七个模块任意排序（共 5040 种顺序全部合法，调制放前级、箱体放放大器
   之前都行）；FX1/FX2 共享效果池，可叠两个混响或两个延迟；模块可"装载但旁通"；可用
   踏板语言点名（Klon 类、TS 类自动映射到目录型号）；按艺术家描述自动给出正确的附点
