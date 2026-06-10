@@ -1,4 +1,17 @@
 {
+  "profile": {
+    "device": "Pulze Mini",
+    "monitoring": "headphones",
+    "instrument": "HSS Strat, vintage-output single coils, hot humbucker bridge",
+    "upstream_chain": ["compressor pedal", "Tube Screamer-style overdrive"],
+    "never_duplicate": ["compressor", "tube screamer"],
+    "gate_default": "on for high gain, natural release",
+    "wet_taste": "subtle",
+    "enable_policy": "wet effects loaded but bypassed; amp+cab on",
+    "chain_default": "stock",
+    "genres_artists": ["blues rock", "SRV", "John Mayer", "Hendrix"],
+    "naming_scheme": "no prefix, plain names"
+  },
   "sound_clones": {
     "1": {"name": "Fender Deluxe Reverb (clean)", "notes": "hyper-accuracy capture, pristine clean platform"},
     "5": {"name": "Hiwatt DR103", "notes": "Gilmour-style headroom, pairs with big delays"}
