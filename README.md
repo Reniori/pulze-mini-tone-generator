@@ -65,22 +65,23 @@ chain as legal material. That is where the value of the catalogs lives.
 
 ## The story
 
-I'm a photographer and hobbyist builder in Los Angeles. I have no coding background.
+I'm a photographer and instrument builder in Los Angeles. I have no coding background.
 Across this entire project I never wrote a line of code — every Python script, every
 byte-level decode, every catalog patch in this repo was written by Claude. What I
 supplied was the device, the evidence, the methodology, the musical judgment, and the
 stubbornness.
 
 It started as a personal need. The Pulze Mini sits in my own custom guitar rig (the
-Busketeer 9000, a guitar with 5 pickups across piezo and magnetic, optical phase and
-gain whammy, 19k Super humbucker configuration, onboard precussion elements, magnetic
-phase interaction like the red special, 2 active circuits, 1 passive circuit, and
-EP > COMP > TS > MUFF > QDD > LOOP > Pulze signal chain, and more), the device has 200
-preset slots, and the official editing path is a phone app that moves one knob at a
-time. I wanted a library organized the way I think, and there was no programmatic way
-to make presets — the `.prst` format had no public documentation anywhere. What came
-out of solving that personal problem is general: acomplete white-box model of the device
-that can compose any tone for anyone.
+Busketeer 9000, a Traveler Mod-X-platform guitar with 5 pickups across piezo and
+magnetic, a 19k Super humbucker configuration, magnetic phase interaction like the Red
+Special, an optical phase-and-gain whammy, onboard percussion elements, 2 active
+circuits and 1 passive circuit with treble shaping and optical presence stages, and an
+onboard EP > COMP > TS > MUFF > QDD > LOOP > Pulze signal chain, and more), the device
+has 200 preset slots, and the official editing path is a phone app that moves one knob
+at a time. I wanted a library organized the way I think,
+and there was no programmatic way to make presets — the `.prst` format had no public
+documentation anywhere. What came out of solving that personal problem is general: a
+complete white-box model of the device that can compose any tone for anyone.
 
 So the question became: can a non-programmer reverse-engineer a proprietary binary
 format using an AI as the hands? The honest answer, twenty-some chat sessions later, is
@@ -95,12 +96,6 @@ exported before the context runs out. Twenty-plus sessions deep, every prior sta
 still recoverable. The original scope, "just identify amp IDs," turned out to be three
 orders of magnitude smaller than the actual problem. Recognizing that gap and
 continuing anyway was the project's first real decision.
-
-I worked entirely on a phone. Every screenshot in evidence came from the Pulze Editor
-app on mobile; every preset was sideloaded over Bluetooth; most of my messages were
-voice-note dictation, which is why the project's internal records are full of artifacts
-like "pose mini" (Pulze Mini), "grab cab" (Custom IR), and "musketeer" (the guitar).
-The AI learned to read through the noise.
 
 The private side of the project — a 170-preset library across four tiers and a
 composition doctrine tuned to my own rig — stays private. What you're looking at is
@@ -335,15 +330,22 @@ Both devices have user-content slots the catalogs can only name, not describe:
 
 To let an AI assistant route plain-language tone requests through *your* content,
 describe what you loaded in a `user_layer.json` next to your recipes (see
-`user_layer.example.json`). The file is informational — it never changes the bytes.
+`user_layer.example.json`). The same file carries an optional `profile` section — your
+rig, exclusions, and taste defaults from the skill's starter interview. It is
+informational — it never changes the bytes, only the choices.
 
 ## As a Claude skill
 
 `.claude/skills/pulze-tone-generator/SKILL.md` lets Claude compose tones
 conversationally — ask for "a Pulze tone for …" and it picks the amp/cab/EQ/FX from the
 catalogs, asks about your Sound Clone / User IR slots when relevant, and writes the
-file. This is the semantic agent the project was built for, running on the catalogs as
-its ground truth.
+file. On first run it offers a short, skippable **profile interview** — device and
+monitoring, instrument and pickups, pedals already on your board (so the AI never
+duplicates them digitally), slot contents, gate/wet/enable/chain preferences, musical
+anchors, naming scheme — and stores the answers in `user_layer.json` so every later
+preset is tuned to your rig from the first word. A root `CLAUDE.md` orients Claude Code
+the same way. This is the semantic agent the project was built for, running on the
+catalogs as its ground truth.
 
 ## Tests
 
