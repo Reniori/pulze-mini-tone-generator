@@ -152,14 +152,23 @@ encodes algorithm family, and slots accept families, which is why FX1 and FX2 sh
 pools at all.
 
 **Enum archaeology.** Rotary selectors (voicings, modes, keys) store as integer
-indices. The mapping from index to label was established by stepping a switch through
-every position and exporting each one — which is also how a wrong hypothesis
-(threshold-style encoding) died in a single batch of exports. Some enums are
-effect-specific (harmonizer keys, intervals, modes); a shared 11-value division enum
-(1/1 through 1/16) serves the time-based effects. And some knobs are **dual-encoded**:
-a delay Time position holds either a float in milliseconds or a division-enum index,
-disambiguated by a separate hidden Sync byte. The writer accepts a number or a string
-like `"1/8d"` and sets the Sync byte itself.
+indices — but the mapping was never brute-forced one position at a time. There was no
+"upload twenty screenshots of twenty knob positions." The real work was identifying
+the small vocabulary of knob *types* Hotone actually uses, then characterizing each
+type once: capture a knob's min and max, feed in the full label list the UI shows for
+the range, and the endpoints plus the label sequence are generally enough to deduce
+the entire enum chain. Once a type's logic is established it persists across every
+other effect that uses it — the same division selector, the same signed-dB band, the
+same mode switch — so new effects only needed label confirmation, never
+re-derivation. (It's also how a wrong hypothesis — threshold-style encoding — died on
+a single pair of targeted exports.) Screenshots, throughout, were about establishing
+knob types across *all* parameters at once, their logic and their range, and letting
+the types generalize. Some enums are effect-specific (harmonizer keys, intervals,
+modes); a shared 11-value division enum (1/1 through 1/16) serves the time-based
+effects. And some knobs are **dual-encoded**: a delay Time position holds either a
+float in milliseconds or a division-enum index, disambiguated by a separate hidden
+Sync byte. The writer accepts a number or a string like `"1/8d"` and sets the Sync
+byte itself.
 
 **Sentinels.** "Off" states live just outside the legal ranges: cab Low Cut sweeps
 20–2000 Hz and Off is 19; High Cut sweeps 2000–20000 Hz and Off is 20001. Found by
