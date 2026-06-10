@@ -2,7 +2,7 @@
 
 Generate **Hotone Pulze / Pulze Mini** guitar tones as `.prst` preset files from a JSON
 spec or a Python dict — or conversationally, as a Claude skill, using plain language
-("warm SRV blues lead") backed by the complete reverse-engineered parameter catalogs.
+("warm SRV blues lead") backed by complete reverse-engineered parameter catalogs.
 
 Built and tested on a **Pulze Mini** (firmware V1.1.0). Community preset files from the
 larger **Pulze** (Luna/Eclipse) decode byte-identically — same envelope, same
@@ -10,33 +10,219 @@ larger **Pulze** (Luna/Eclipse) decode byte-identically — same envelope, same
 generated presets load on both. Final as of the firmware version above; provided as-is
 for posterity.
 
+This README is long on purpose. It contains the lore and the method, because the method
+is the part most people don't have, and the lore explains why the method exists.
+
 ## Why this exists
 
-Two reasons.
+The goal was always a semantic agent: describe a tone in plain language and get a
+working preset back, leaning on a frontier AI's musical knowledge to build sounds I
+didn't yet know how to dial in myself. That requires machine-readable ground truth for
+every amp, cab, effect, and knob position on the device. This repo is that ground truth,
+plus the byte-exact writer that turns a recipe into a file, plus the record of how a
+person with zero programming experience got it done by working with an AI.
 
-**The goal:** a semantic agent that can generate *any* preset from plain text — leaning on
-a frontier AI's musical knowledge to build tones you don't yet know how to dial in
-yourself. That requires machine-readable ground truth for every amp, cab, effect, and
-knob position. This repo is that ground truth plus the byte-exact writer that turns a
-recipe into a file. It was developed for a Pulze Mini resident on the **Busketeer 9000**
-(a private guitar build with a 7-pedal onboard analog signal chain); this public fork
-strips the private tone doctrine and ships pure device-factory defaults.
+## The story
 
-**The cautionary tale:** an early version carried a one-character documentation error —
-"CAB High Cut Off sentinel = 2000" — when 2000 Hz is actually the filter's *floor*
-(maximum filtering) and the true Off sentinel is 20001. The result: an entire 170-preset
-library silently low-passed at 2 kHz. The empirical catalogs in this repo exist so that
-folklore specs can never again outrank device truth. (Fellow travelers:
-[THR-tone-architect](https://github.com/mctozal/THR-tone-architect) hit the same class of
-bug on Yamaha THR-II and inspired this repo's publishing format.)
+I'm a photographer and instrument builder in Los Angeles. I have no coding background.
+Across this entire project I never wrote a line of code — every Python script, every
+byte-level decode, every catalog patch in this repo was written by Claude. What I
+supplied was the device, the evidence, the methodology, the musical judgment, and the
+stubbornness.
+
+The Pulze Mini in question lives on the **Busketeer 9000**, a custom guitar I built with
+a complete 7-pedal analog signal chain inside the body. By the time signal reaches the
+Pulze it has already been through five to seven stages of analog processing, so the
+Pulze's job is everything downstream: amp, cab, modulation, time effects. The device
+has 200 preset slots and a phone app that edits one knob at a time. I wanted a personal
+library organized the way I think — working rig, genre catalog, artist catalog, amp
+study — and there was no programmatic way to make presets. The `.prst` format had no
+public documentation anywhere.
+
+So the question became: can a non-programmer reverse-engineer a proprietary binary
+format using an AI as the hands? The honest answer, twenty-some chat sessions later, is
+yes — but not the way either of us expected.
+
+An early session decoded what looked like the amp IDs, built a batch of presets, and
+felt finished. Then the chat overflowed and hours of work vanished mid-session. Those
+presets were never imported; they stayed throwaway. That loss founded the discipline
+that carried everything after it: every session ends with a versioned freeze pack —
+a zip containing the complete working state plus a nested copy of every prior version —
+exported before the context runs out. Twenty-plus sessions deep, every prior state is
+still recoverable. The original scope, "just identify amp IDs," turned out to be three
+orders of magnitude smaller than the actual problem. Recognizing that gap and
+continuing anyway was the project's first real decision.
+
+I worked entirely on a phone. Every screenshot in evidence came from the Pulze Editor
+app on mobile; every preset was sideloaded over Bluetooth; most of my messages were
+voice-note dictation, which is why the project's internal records are full of artifacts
+like "pose mini" (Pulze Mini), "grab cab" (Custom IR), and "musketeer" (the guitar).
+The AI learned to read through the noise.
+
+The private side of the project — a 170-preset library across four tiers, a composition
+doctrine that encodes how presets should be voiced around my specific instrument —
+stays private. What you're looking at is the public core: the format knowledge, the
+catalogs, the writer, the decoder, and the verification suite, with device-factory
+defaults and none of my personal tone rules. Publishing it at all was inspired by
+[THR-tone-architect](https://github.com/mctozal/THR-tone-architect), which proved that
+a hobbyist reverse-engineering toolkit for a single amp is worth shipping properly.
+
+One more thing belongs in the story, because leaving it out would be dishonest: the AI
+was wrong, repeatedly, and catching it was half the work. It once invented a
+"quantized 4-position knob" out of nothing because the numbers looked pretty, dressed
+the invention up with plausible analysis, and asked me to verify it. Two exported sweep
+files killed the claim in one turn. Another time it convinced itself thirty turns deep
+that a whole archive of work was missing, when its own extraction command had silently
+truncated. The project's most durable lesson: **AI confidence is uncorrelated with AI
+accuracy.** Everything either of us believed was treated as a hypothesis until the
+device confirmed it in bytes. That stance, not any single decode, is what made the
+output trustworthy.
+
+## How the format was deciphered — working with an AI on an undocumented binary
+
+There was no spec. There was a device, a phone app that could export and import
+`.prst` files, and an AI that could read whatever I uploaded. The whole method grew
+from that triangle. These are the techniques, in roughly the order they were invented:
+
+**The Rosetta Stone.** Wipe the device, export the factory-default preset, and treat
+it as the canonical reference: every slot at a known model, every chunk in a known
+state. One clean reference file resolved more ambiguity than the seventeen random
+presets decoded before it. Orientation in unknown territory always started here.
+
+**App-export diffs.** Change exactly one thing on the device — one knob, one toggle,
+one model — export, and diff the two files. The position that changed is that
+control's home. This is the highest-confidence evidence tier in the project: the app
+itself telling you what it writes. Multi-toggle ambiguities, sync bytes, and
+firmware-baked values were all resolved this way.
+
+**K-sweeps.** To map an unknown effect's knobs in one shot, the AI generates a probe
+preset with a distinctive placeholder per chunk position — `[11, 22, 33, 44, 55, 66,
+77, 88]` — I sideload it, photograph the screen, and every knob's position falls out
+of a single screenshot. (The earlier attempt used all 50s; the values collapsed
+visually and taught us why the placeholders must be unique.)
+
+**Screenshots as verification currency.** Fresh-load every effect and every amp,
+photograph every knob, and let the AI read the images to lock per-knob factory
+defaults into the catalog. All 52 built-in amp models and every factory effect — 159
+unique algorithms covering the device's full effect set, some shared across multiple
+slots — were swept this way. Screenshots were the silent handshake of the whole
+collaboration: I rarely wrote "confirmed," I just uploaded the picture.
+
+**Enum archaeology.** Rotary selectors (voicings, modes, keys) store as integer
+indices. The mapping from index to label was established by stepping a switch through
+every position and exporting each one — which is also how a wrong hypothesis
+(threshold-style encoding) died in a single batch of exports. Some enums are
+effect-specific (harmonizer keys, intervals, modes); a shared 11-value division enum
+(1/1 through 1/16) serves the time-based effects. And some knobs are **dual-encoded**:
+a delay Time position holds either a float in milliseconds or a division-enum index,
+disambiguated by a separate hidden Sync byte. The writer accepts a number or a string
+like `"1/8d"` and sets the Sync byte itself.
+
+**Sentinels.** "Off" states live just outside the legal ranges: cab Low Cut sweeps
+20–2000 Hz and Off is 19; High Cut sweeps 2000–20000 Hz and Off is 20001. Found by
+exporting the Off states and reading what the app actually wrote.
+
+**Engine-only positions.** Some chunk positions carry values the DSP reads but no UI
+knob controls — they exist in every fresh export at positions no knob maps to. The
+catalogs preserve these per effect and per slot, because zeroing them changes the
+sound.
+
+**Firmware residue.** The firmware does not zero unused chunk positions when you
+switch models. Wild preset files — including everything on the community cloud —
+carry leftover bytes from whatever was loaded before. Rule that followed: wild files
+are evidence of structure, never of defaults. Only fresh-load captures count as
+default-value truth.
+
+**Cross-slot probes.** The same effect UID loaded into two different slots
+simultaneously proved that UIDs anchor algorithms, not slots, and that slot index maps
+identically into the UID array and the parameter chunks. The chain-order grammar was
+brute-verified the same way: all 5040 orderings of the seven slots are legal to the
+firmware, including cab-before-amp.
+
+**Ground-truth correction.** When a generated preset was wrong on the device, I didn't
+describe the bug — I fixed the knob in the app, exported the corrected file, and sent
+it with "here is the preset for you to check." Diff against target. The bug locates
+itself. This is how the nastiest writer bug was found: the catalog's knob `position`
+field turned out to be the *visual* position in the app's layout, not the DSP chunk
+position, and amps with layout gaps shifted every knob after the gap.
+
+**The acceptance gate.** Every change to the writer or catalogs must rebuild a corpus
+of device-verified presets byte-identically from their decoded recipes. That corpus —
+40 fixtures — ships in `tests/` and runs in CI. A preset's lifecycle is: self-test
+round-trip → ship → verify on device with screenshots → promote into the corpus.
+Nothing is "done" at "the script ran without errors."
+
+None of this is vibe coding. Vibe coding's defining feature is the absence of
+verification; this project has verification at every layer, against the physical
+device, with the AI's own claims as the most frequently falsified hypotheses. But it
+isn't conventional programming either — I can't audit the Python at the syntax level
+and never tried to. The clean division of labor was the point: the AI did the
+syntactic work; I did the empirical and architectural work; neither tried to do the
+other's job.
+
+## How a preset is built
+
+A `.prst` file is base64-encoded text: one JSON header immediately followed by one
+JSON body. The writer (`pulze_tone/writer.py`, dependency-free Python) compiles a
+recipe dict into that file through a fixed pipeline:
+
+1. **Name** — validated to ≤16 characters, URL-encoded into the body.
+2. **Slot initialization** — all seven slots (`PRE, AMP, DYN, CAB, EQ/MOD, FX1, FX2`,
+   internal order) get a default model UID and a 15-float parameter chunk. Empty slots
+   receive the device's own default model with catalog-verified knob defaults plus
+   that model's engine-only stamps.
+3. **AMP resolution** — the chosen amp's catalog factory chunk is loaded whole
+   (preserving its engine-only positions), then each recipe knob is encoded and
+   overlaid at its catalog position.
+4. **Module resolution** — each specified module resolves by name to a UID; its chunk
+   is built from zeros, plus slot-appropriate engine-only stamps, plus the encoded
+   recipe knobs. Cab-family effects start from the factory cab filter state instead
+   (Volume 50, Low Cut 80 Hz, High Cut Off).
+5. **Per-knob encoding dispatch** — each value routes through one of: continuous range
+   clamp; 0-indexed or 1-indexed rotary enum (string label or integer accepted);
+   toggle (`"On"`/`"Off"`/bool/0/1); Off-sentinel (the literal `"Off"` or the sentinel
+   number, for knobs whose encoding declares one); or the dual-encoding gate, where a
+   number writes a float with Sync=0 and a division string writes an enum index with
+   Sync=1.
+6. **Chain order** — the recipe's `chain_order` (or the device stock chain
+   `DYN → PRE → AMP → CAB → EQ/MOD → FX1 → FX2` if omitted) becomes the `algoSlot`
+   permutation.
+7. **Enable mask** — `enabled_slots` becomes the `algoRunEn` bitmask, bit *i* =
+   internal slot *i*. Content and enablement are orthogonal: a slot can carry a fully
+   voiced effect and stay bypassed.
+8. **Assembly** — the seven chunks flatten to 105 floats (`algoParaVal`); the body
+   gains its constants (`magic` 23205, `crc16` 65535 — inert, confirmed by swap test —
+   quick-knob defaults, zeroed reserve); the header is built with `presetLenght` equal
+   to the body length exactly (the convention real Pulze Editor exports use — and yes,
+   the typo is the device's); header + body encode to UTF-8 and then base64.
+
+A body, trimmed to the load-bearing fields:
+
+```jsonc
+{
+  "magic": 23205,
+  "crc16": 65535,                 // unused by firmware
+  "name": "Crunch%20Rhythm",      // URL-encoded, ≤16 chars
+  "algoRunEn": 78,                // bitmask: AMP+DYN+CAB+FX2 enabled
+  "algoSlot": [2,0,1,3,4,5,6],    // DYN→PRE→AMP→CAB→EQ/MOD→FX1→FX2
+  "algoUID": [0, 117440555, 29, 167772265, 16777269, 67108876, 201326610],
+  "algoParaVal": [ /* 7 × 15 floats, one chunk per internal slot */ ]
+}
+```
+
+The decoder (`pulze_tone/decoder.py`) is the exact inverse, and
+`pulze_tone/roundtrip.py` goes one step further: it reconstructs an *editable recipe*
+from any `.prst` — including community downloads — by walking the catalogs backward
+from the bytes. That reconstruction is what the test suite uses to prove the writer:
+decode a fixture to a recipe, rebuild it, demand byte identity.
 
 ## The real `.prst` format
 
 - Base64-encoded text: a JSON **header** immediately followed by a JSON **body**.
 - Header: `{"presetVersion":"2.0.1","fileType":"prst","deviceType":"AP-10",
   "presetLenght":"<body length>","author":"..."}` — `presetLenght` counts the **body
-  only** (verified against Pulze Editor exports; yes, the typo is the device's).
-  `deviceType` is `"AP-10"` for both Pulze and Pulze Mini — there is **no device gate**.
+  only** (verified against Pulze Editor exports). `deviceType` is `"AP-10"` for both
+  Pulze and Pulze Mini — there is **no device gate** in the file.
 - Body: `magic` 23205, `crc16` 65535 (unused), preset `ID`, `name` (URL-encoded,
   ≤16 chars), `volume`, `bpm`, then the engine state:
   - `algoSlot` — a permutation of slot IDs 0-6 defining signal-chain order. Internal
@@ -96,6 +282,8 @@ python3 -m pulze_tone --list
 Knob names, ranges, and option labels come from the catalogs. Delay/mod `Time`/`Rate`
 accept a number (ms / Hz, Sync off) **or** a division string like `"1/8d"` (Sync on) —
 the sync byte is set automatically. Omit `chain_order` to get the device stock chain.
+Specify every audible knob: unspecified positions become 0.0, and several effects ship
+with Mix or Level at 0 by factory default — silent until you set them.
 
 ### Python API
 
@@ -121,7 +309,9 @@ describe what you loaded in a `user_layer.json` next to your recipes (see
 
 `.claude/skills/pulze-tone-generator/SKILL.md` lets Claude compose tones
 conversationally — ask for "a Pulze tone for …" and it picks the amp/cab/EQ/FX from the
-catalogs, asks about your Sound Clone / User IR slots when relevant, and writes the file.
+catalogs, asks about your Sound Clone / User IR slots when relevant, and writes the
+file. This is the semantic agent the project was built for, running on the catalogs as
+its ground truth.
 
 ## Tests
 
@@ -130,19 +320,33 @@ pip install pytest && python3 -m pytest tests/
 ```
 
 40 golden fixtures assert **byte-identical** round-trips (decode → recipe → rebuild).
-CI runs the suite on every push.
+The fixtures descend from device-verified presets; the suite is the same acceptance
+gate the project ran after every catalog or writer change. CI runs it on every push.
 
 ## Verification notes
 
 - Catalogs (`pulze_tone/data/`) are empirical: captured from a physical Pulze Mini on
-  firmware V1.1.0 (fresh-load screenshots, byte-exact export round-trips). 62 amp
-  entries including the 10 Sound Clone slots; 159 effects; every knob's chunk position
-  and encoding.
+  firmware V1.1.0 via fresh-load screenshots, single-knob export diffs, K-sweep
+  probes, and byte-exact export round-trips. 62 amp entries (52 built-in models + the
+  10 Sound Clone slots); 159 unique effect algorithms; every knob's chunk position,
+  encoding, range, option labels, and factory default.
 - Format identity across devices was established on real community files from both the
-  Pulze and Pulze Mini categories, multiple firmware generations: identical schema, full
-  UID overlap, identical stock chain.
+  Pulze and Pulze Mini categories, multiple firmware generations: identical schema,
+  full UID overlap, identical stock chain.
 - Engine-only chunk positions (DSP-read values with no UI knob) are preserved per the
   catalogs; wild-file leftovers are deliberately not treated as defaults.
+- Where a document and the device disagreed — including this project's own earlier
+  documents, and the AI's own claims — the device won, every time. The catalogs encode
+  only what survived that filter.
+
+## Credits
+
+Every line of code in this repository was written by Claude (Anthropic), working under
+my direction across a long series of chat sessions; every byte-level fact in the
+catalogs was verified against the physical device before it was allowed to stay. The
+decision to publish, and the shape of this repo, were inspired by
+[mctozal/THR-tone-architect](https://github.com/mctozal/THR-tone-architect), the
+equivalent project for the Yamaha THR-II.
 
 ## Disclaimer
 
@@ -166,6 +370,14 @@ MIT — see [LICENSE](LICENSE).
 在 **Pulze Mini**（固件 V1.1.0）上构建并实测；大款 Pulze 的社区预设文件与 Mini 字节级
 同构（同一封装、同一 `deviceType "AP-10"`、同一 7 槽 × 15 参数结构、型号目录完全重叠），
 生成的预设两款设备均可加载。随当前固件版本定稿，按"原样"长期存档。
+
+**项目背景：** 作者是洛杉矶的摄影师与乐器制作者，完全没有编程背景，全程没有写过一行
+代码 —— 仓库中所有代码均由 Claude（AI）在作者指导下完成。作者提供设备、实证证据、
+方法论与音乐判断：通过出厂复位导出建立"罗塞塔石碑"参照、单旋钮导出差分定位每个参数
+的字节位置、K-sweep 探针（每个位置一个独特占位值）一张截图映射全部旋钮、逐档导出
+破解枚举编码、以及"自检 → 出货 → 设备截图验证 → 收录回归库"的验收闭环。AI 的论断
+一律视为假设，以设备字节为最终裁决 —— 这是整个项目最重要的纪律。完整故事与方法见
+上文英文章节。
 
 **要点：**
 
