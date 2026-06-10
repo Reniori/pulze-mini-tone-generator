@@ -1,0 +1,10 @@
+{
+  "sound_clones": {
+    "1": {"name": "Fender Deluxe Reverb (clean)", "notes": "hyper-accuracy capture, pristine clean platform"},
+    "5": {"name": "Hiwatt DR103", "notes": "Gilmour-style headroom, pairs with big delays"}
+  },
+  "user_irs": {
+    "3": {"name": "Deluxe Verb 1x12", "notes": "warm Fender clean cab"},
+    "12": {"name": "Marshall 4x12 T75", "notes": "tight modern British rhythm"}
+  }
+}

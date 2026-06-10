@@ -1,0 +1,4950 @@
+{
+ "0x07000001": {
+  "uid": "0x07000001",
+  "uid_int": 117440513,
+  "name": "Tweed Lux",
+  "role": "Clean - Fender Tweed Deluxe 5E3",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Tone": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect tone"
+   },
+   "Output": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Fender Tweed Deluxe amp (5E3 version, BRIGHT channel). Featuring rich, singing clean and juicy, luscious overdrive, the mysterious DELUXE amp with the TWEED cover can be found everywhere from studios to bedrooms.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 11,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000003": {
+  "uid": "0x07000003",
+  "uid_int": 117440515,
+  "name": "Baseman Norm",
+  "role": "Clean - Fender Bassman 5F6-A Normal",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Output": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Fender Bassman amp (5F6-A version, Normal channel), the American legend with a twangy top and fat bottom end. Originally designed for bass, it soon became popular among guitar players.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 12,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output,Middle].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000004": {
+  "uid": "0x07000004",
+  "uid_int": 117440516,
+  "name": "Black Twin",
+  "role": "Clean - Fender '65 Twin Reverb",
+  "category": "0x07",
+  "factory_chunk": [
+   25.0,
+   50.0,
+   50.0,
+   40.0,
+   60.0,
+   1.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 25.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Output": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 40.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 60.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Bright": {
+    "position": 5,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Bright",
+    "pdf_function": "Switches extra brightness on/off"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Fender '65 Twin Reverb amp. It provides a super clean, crystal-like sound with scooped mids, popularly known as the \"Blackface Sound\".",
+  "pdf_family": "Clean",
+  "pdf_source_page": 12,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000005": {
+  "uid": "0x07000005",
+  "uid_int": 117440517,
+  "name": "Black Deluxe",
+  "role": "Clean - Fender Blackface Deluxe Reverb",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Output": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Fender Blackface Deluxe Reverb amp (Normal CH), providing you a more scooped \"blackface\" sound with chime-y highs. Plus, it's easier to crank up too!",
+  "pdf_family": "Clean",
+  "pdf_source_page": 12,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700000E": {
+  "uid": "0x0700000E",
+  "uid_int": 117440526,
+  "name": "Silver Master",
+  "role": "Clean - Fender Silverface Bandmaster AB763",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Output": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Bright": {
+    "position": 4,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra brightness on/off"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Fender Silverface Bandmaster amp (early AB763 version), which was treated as the \"holy grail of Fender tone\". Not much tweaking is needed \u2014 just plug in, turn up the volume and feel the magic.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 13,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output,Treble,Bright].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000010": {
+  "uid": "0x07000010",
+  "uid_int": 117440528,
+  "name": "Voxy 15 TB",
+  "role": "Clean - Vox AC15 Top Boost",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   60.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Tone Cut": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 60.0,
+    "pdf_function": "Counterclockwise controls the effect tone"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of a vintage VOX AC15 combo (with Top Boost), the little brother of the legendary VOX AC30, giving you the same British Invasion sound.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 12,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Tone Cut,Master,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000011": {
+  "uid": "0x07000011",
+  "uid_int": 117440529,
+  "name": "Voxy 30HW Norm",
+  "role": "Clean - Vox AC30HW Normal",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   0.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the output volume (post gain)"
+   },
+   "Tone Cut": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Counterclockwise controls the effect tone"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bright": {
+    "position": 3,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra brightness on/off"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the VOX AC30HW combo (Normal channel). As the UK music scene grew out of small pubs to later cross the Pond, almost everyone was using the combo amp covered with a diamond grill cloth, the legendary VOX AC30. This became the British Invasion sound.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 13,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Master,Bright].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000014": {
+  "uid": "0x07000014",
+  "uid_int": 117440532,
+  "name": "Jazz Clean",
+  "role": "Clean - Roland JC-120",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Bright": {
+    "position": 4,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra presence on/off"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the immaculate \"JC clean\" 2x12 solid-state jazz-amp combo. The pure transparent clean sound has ruled for more than four decades and remains incontestably reliable among pro musicians.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 12,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Middle,Treble,Bright].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000015": {
+  "uid": "0x07000015",
+  "uid_int": 117440533,
+  "name": "Emperor Clean",
+  "role": "Clean - Matchless Chieftain Clean",
+  "category": "0x07",
+  "factory_chunk": [
+   35.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 35.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the Matchless Chieftain 212 combo (clean sound), featuring the rich harmonics and matchless sensitivity that made this amp a Class A legend.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 12,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Master,Middle].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000017": {
+  "uid": "0x07000017",
+  "uid_int": 117440535,
+  "name": "Tang A30 Clean",
+  "role": "Clean - Orange AD30 Clean channel",
+  "category": "0x07",
+  "factory_chunk": [
+   20.0,
+   50.0,
+   50.0,
+   50.0,
+   60.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 20.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Master": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 60.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "The Tangerine A30 Clean is based on the famous Orange AD30 amp head (CH 1), a 30-watt, vintage modern Class A model with Orange's famous \"juicy\" sound. Adjust the GAIN knob to get the magic: glassy boutique chime with the gain low, and roaring British chomp with the gain up.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 14,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Master,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000019": {
+  "uid": "0x07000019",
+  "uid_int": 117440537,
+  "name": "Superstar Clean",
+  "role": "Clean - Mesa Lone Star Clean",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the clean channel of the famous Mesa/Boogie Lone Star combo, bringing you a punchy, shimmering twang with love and joy.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 13,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Master,Middle].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700001A": {
+  "uid": "0x0700001A",
+  "uid_int": 117440538,
+  "name": "Glacian Clean",
+  "role": "Clean - Bogner Shiva Clean",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Bright": {
+    "position": 5,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra brightness on/off"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the clean channel of the famous Bogner Shiva combo (20th anniversary version). Our replica reproduces the glassy hi-fi clean sound powered by a pair of KT88 power tubes. This is a super wide-open sound with immense headroom, sensitive moods, and great low end response.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 13,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Master,Treble,Bright].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000020": {
+  "uid": "0x07000020",
+  "uid_int": 117440544,
+  "name": "Press Wrecker",
+  "role": "Clean - Trainwreck Express",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Output": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Bright": {
+    "position": 6,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Bright",
+    "pdf_function": "Switches extra brightness on/off"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Trainwreck Express amp, a super-rare boutique amp created by Ken Fischer, brings you a high end Plexi-style sound that reacts extremely faithful to your fingers.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 14,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000021": {
+  "uid": "0x07000021",
+  "uid_int": 117440545,
+  "name": "Brown King Clean",
+  "role": "Clean - Fender Brownface Vibro-King (FAT off)",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Output": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the Fender Brownface Vibro-King amp (FAT switch off), one of Gary Clark Jr.'s favorites. It gives you a beautiful shimmering clean when turned down, and a serious touch-sensitive dirt when cranked up.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 13,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000023": {
+  "uid": "0x07000023",
+  "uid_int": 117440547,
+  "name": "Soloist 100 Clean",
+  "role": "Clean - Soldano SLO-100 Normal Clean",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Soldano SLO100 amp head (NORMAL channel, clean sound), which set a benchmark for modern amps. The reason you find the sound so familiar is because you've been hearing it on gold records since 1987.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 13,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Master,Middle].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000024": {
+  "uid": "0x07000024",
+  "uid_int": 117440548,
+  "name": "Baseman Bright",
+  "role": "Drive - Fender Bassman 5F6-A Bright",
+  "category": "0x07",
+  "factory_chunk": [
+   35.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 35.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Output": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Fender Bassman amp (5F6-A version, Bright channel), the American legend with a twangy top and fat bottom end. Originally designed for bass, it soon became popular among guitar players.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 14,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000026": {
+  "uid": "0x07000026",
+  "uid_int": 117440550,
+  "name": "Brown King Drive",
+  "role": "Drive - Fender Brownface Vibro-King (FAT on)",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Output": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the Fender Brownface Vibro-King amp (FAT switch on), one of Gary Clark Jr.'s favorites. It gives you a beautiful shimmering clean when turned down, and a serious touch-sensitive dirt when cranked up.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 15,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Output,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000027": {
+  "uid": "0x07000027",
+  "uid_int": 117440551,
+  "name": "Voxy 30HW TB",
+  "role": "Drive - Vox AC30HW Top Boost",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the output volume (post gain)"
+   },
+   "Tone Cut": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Counterclockwise controls the effect tone"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Char": {
+    "position": 5,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Cool",
+     "Hot"
+    ],
+    "factory_default": "Cool",
+    "options_known": true,
+    "pdf_function": "Selects from two sound characters: Cool (lower gain)/Hot (higher gain)"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the VOX AC30HW combo (Top Boost channel). As the UK music scene grew out of small pubs to later cross the Pond, almost everyone was using the combo amp covered with a diamond grill cloth, the legendary VOX AC-30. This became the British Invasion sound.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 15,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Tone Cut,Master,Bass,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000029": {
+  "uid": "0x07000029",
+  "uid_int": 117440553,
+  "name": "Marshell Blues",
+  "role": "Drive - Marshall 1958 18-Watt",
+  "category": "0x07",
+  "factory_chunk": [
+   70.0,
+   50.0,
+   20.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 70.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Tone": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect tone"
+   },
+   "Output": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 20.0,
+    "pdf_function": "Controls the effect output"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "An amp simulator based on the sound characteristics of the legendary Marshall 1958 combo nicknamed \"18 Watter\" or \"Mini Bluesbreaker\" amp, a serious blues engine with incredible smooth, fat sound and great dynamics. A must-have in your armory!",
+  "pdf_family": "Drive",
+  "pdf_source_page": 17,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Tone,Output].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700002B": {
+  "uid": "0x0700002B",
+  "uid_int": 117440555,
+  "name": "Marshell 45",
+  "role": "Drive - Marshall JTM45",
+  "category": "0x07",
+  "factory_chunk": [
+   60.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 60.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Output": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Marshall JTM 45 amp head (HIGH TREBLE channel). Born in 1962, it soon became popular among countless stars and quickly defined the '60s rock & blues sound.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 16,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Presence,Output,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700002E": {
+  "uid": "0x0700002E",
+  "uid_int": 117440558,
+  "name": "Marshell 50",
+  "role": "Drive - Marshall JMP 50",
+  "category": "0x07",
+  "factory_chunk": [
+   60.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 60.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Output": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Marshall JMP 50 amp head (HIGH TREBLE channel). No explanation necessary \u2014 the tone is as legendary as the music it helped to create.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 16,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Presence,Output,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000031": {
+  "uid": "0x07000031",
+  "uid_int": 117440561,
+  "name": "Marshell SLP",
+  "role": "Drive - Marshall Super Lead 1959 Plexi",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output and gain amount"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Output": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Marshall Super Lead 1959 amp head (Bright channel). No explanation necessary \u2014 the tone is as legendary as the music it helped to create. Since it has an extreme output (demanded by Pete Townshend!), we added a Output knob so you can take control.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 16,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Presence,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000035": {
+  "uid": "0x07000035",
+  "uid_int": 117440565,
+  "name": "Marshell 800",
+  "role": "Hi-Gain - Marshall JCM800",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Marshall JCM800 amp head. Just think about the golden 1980's \u2014 a decade of heavy metal and THAT iconic, aggressive, crunchy BRITISH LEAD sound. Now the legend is back!",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 17,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700003C": {
+  "uid": "0x0700003C",
+  "uid_int": 117440572,
+  "name": "Messe IIC+",
+  "role": "Hi-Gain - Mesa Mark IIC+",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Bass Shift": {
+    "position": 6,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bass Shift"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra bass on/off"
+   },
+   "Treble Shift": {
+    "position": 7,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Treble Shift"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra treble on/off"
+   },
+   "Deep": {
+    "position": 8,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Deep"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra low end on/off"
+   },
+   "Bright": {
+    "position": 9,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra brightness on/off"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Mesa/Boogie Mark II C+ amp head (LEAD channel). Now you have one of the hottest amp tones: tight, focused rhythm riffs and the legendary \"liquid lead\" tone. This amp gets the aeons of sustain Metallica and Dream Theater bet their lives on.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 18,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble,Bass Shift].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700003D": {
+  "uid": "0x0700003D",
+  "uid_int": 117440573,
+  "name": "Glacian Drive",
+  "role": "Drive - Bogner Shiva Drive",
+  "category": "0x07",
+  "factory_chunk": [
+   30.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 30.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the clean channel of the famous Bogner Shiva combo (20th anniversary version). Our replica reproduces the glassy hi-fi clean sound powered by a pair of KT88 power tubes. This is a super wide-open sound with immense headroom, sensitive moods, and great low end response.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 15,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Master,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700003E": {
+  "uid": "0x0700003E",
+  "uid_int": 117440574,
+  "name": "Tang A30 Drive",
+  "role": "Drive - Orange AD30 Drive channel",
+  "category": "0x07",
+  "factory_chunk": [
+   70.0,
+   70.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 70.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Master": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 70.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the famous Orange AD30 amp head (CH 2), a 30-watt, vintage modern Class A model with Orange's famous \"juicy\" sound. Adjust the GAIN knob to get the magic: glassy boutique chime with the gain low, and roaring British chomp with the gain up.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 17,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Master,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000042": {
+  "uid": "0x07000042",
+  "uid_int": 117440578,
+  "name": "Fryman B",
+  "role": "Hi-Gain - Friedman BE",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Fat": {
+    "position": 6,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Fat"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Adjusts overall tonal characters"
+   },
+   "C45": {
+    "position": 7,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "C45"
+    ],
+    "factory_default": "C45",
+    "pdf_function": "Adjusts overall tonal characters"
+   }
+  },
+  "engine_only_positions": {
+   "8": 1.0,
+   "9": 1.0
+  },
+  "pdf_description": "Based on a famous UK-style boutique amp head (BE channel). This is an incredible tone machine based on the classic hot British amps. But this amp is extremely versatile: with some knob tweaking, you'll be amazed by the super tight low ends, sweet mids and rich harmonics.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 17,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble,Fat,C45].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000047": {
+  "uid": "0x07000047",
+  "uid_int": 117440583,
+  "name": "Soloist 100 Crunch",
+  "role": "Drive - Soldano SLO-100 Crunch",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Soldano SLO100 amp head (NORMAL channel, dirty sound), which set a benchmark for modern amps. The reason you find the sound so familiar is because you've been hearing it on gold records since 1987.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 16,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Master,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000048": {
+  "uid": "0x07000048",
+  "uid_int": 117440584,
+  "name": "Emperor Drive",
+  "role": "Drive - Matchless Chieftain Drive",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the Matchless Chieftain 212 combo (driven sound), featuring the rich harmonics and matchless sensitivity that made this amp a Class A legend.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 15,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Master,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700004A": {
+  "uid": "0x0700004A",
+  "uid_int": 117440586,
+  "name": "Superstar Drive",
+  "role": "Drive - Mesa Lone Star Drive",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Input": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the input sensitivity"
+   },
+   "Gain": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount"
+   },
+   "Presence": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 6,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the drive channel of the famous Mesa/Boogie Lone Star combo, bringing you that well-balanced, smooth American-style drive with a rich combination of both vintage and modern tones.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 15,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Master,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700004C": {
+  "uid": "0x0700004C",
+  "uid_int": 117440588,
+  "name": "Dumbell ODS",
+  "role": "Drive - Dumble Overdrive Special",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   1.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": null
+   },
+   "Gain": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount"
+   },
+   "Presence": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 6,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Fat": {
+    "position": 8,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Fat"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra mids/gain on/off"
+   },
+   "Voice": {
+    "position": 10,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Rock",
+     "Jazz"
+    ],
+    "factory_default": "Rock",
+    "pdf_function": "Selects from 2 voicings: Rock/Jazz (cuts some high frequency comparing to Rock)"
+   }
+  },
+  "engine_only_positions": {
+   "7": 1.0,
+   "9": 1.0
+  },
+  "pdf_description": "Based on the legendary Dumble Overdrive Special amp head (Overdrive section on), providing THAT tone created by lots of legendary jazz/blues/fusion musicians.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 16,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Presence,Master,Bass,Middle,Treble,Voice].factory_default",
+     "knobs[Voice].options"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700004E": {
+  "uid": "0x0700004E",
+  "uid_int": 117440590,
+  "name": "Marshell 900",
+  "role": "Hi-Gain - Marshall JCM900",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Marshall JCM900 (model 4100, CH B) amp head. Released in 1990, it was designed to produce more gain, less noise and stainless Marshall tone.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 18,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000053": {
+  "uid": "0x07000053",
+  "uid_int": 117440595,
+  "name": "Tang R100",
+  "role": "Hi-Gain - Orange Rockerverb 100",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Master": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the famous Orange Rockerverb 100 amp head, Orange's first high gain amplifier. Its unique thick voice has become eternally linked with hard rock/stoner rock.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 19,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Master,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000055": {
+  "uid": "0x07000055",
+  "uid_int": 117440597,
+  "name": "Messe IV",
+  "role": "Hi-Gain - Mesa Mark IV",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   1.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Fat": {
+    "position": 7,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Fat"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switch on to get a fatter sound"
+   },
+   "Bright": {
+    "position": 8,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Bright",
+    "pdf_function": "Switches extra brightness on/off"
+   },
+   "Voicing": {
+    "position": 9,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Mid Gain",
+     "Harmony"
+    ],
+    "factory_default": "Mid Gain",
+    "pdf_function": "Selects from two voicings: Mid Gain (a punchier sound with more mids and distortion)/Harmony (a more balanced sound)"
+   }
+  },
+  "engine_only_positions": {
+   "6": 1.0
+  },
+  "pdf_description": "The classic Boogie Lead sound...and beyond. Based on the legendary Mesa/Boogie Mark IV amp head (LEAD channel). This massive lead tone is one of the most beautifully voiced tones that can always be heard in a mix.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 19,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble,Bright,Voicing].factory_default",
+     "knobs[Voicing].options"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000059": {
+  "uid": "0x07000059",
+  "uid_int": 117440601,
+  "name": "Soloist 100 Lead",
+  "role": "Hi-Gain - Soldano SLO-100 Overdrive",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary Soldano SLO100 amp head (OVERDRIVE channel), which set a benchmark for modern amps. The reason you find the sound so familiar is because you've been hearing it on gold records since 1987.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 18,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700005A": {
+  "uid": "0x0700005A",
+  "uid_int": 117440602,
+  "name": "Eddie 51",
+  "role": "Hi-Gain - Peavey 5150",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Master": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Presence": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on a heavy rock legend: the Peavey 5150 (LEAD channel). The original is famous for its raw tone and relentless power. Our Eddie 51 gives you the \"brown metal\" sound heard on legendary heavy metal records.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 19,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700005E": {
+  "uid": "0x0700005E",
+  "uid_int": 117440606,
+  "name": "Fryman HB",
+  "role": "Hi-Gain - Friedman HBE",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Fat": {
+    "position": 6,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Fat"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Adjusts overall tonal characters"
+   },
+   "C45": {
+    "position": 7,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "C45"
+    ],
+    "factory_default": "C45",
+    "pdf_function": "Adjusts overall tonal characters"
+   }
+  },
+  "engine_only_positions": {
+   "8": 1.0,
+   "9": 1.0
+  },
+  "pdf_description": "Based on a famous UK-style boutique amp head (HBE channel). This is an incredible tone machine based on the classic hot British amps. But this amp is extremely versatile: with some knob tweaking, you'll be amazed by the super tight low ends, sweet mids and rich harmonics.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 18,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Treble,Fat,C45].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000061": {
+  "uid": "0x07000061",
+  "uid_int": 117440609,
+  "name": "Engle Saga 1",
+  "role": "Hi-Gain - Engl Savage 120 Contour Off",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Input": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the input sensitivity"
+   },
+   "Gain": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount"
+   },
+   "Presence": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 6,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Voice": {
+    "position": 7,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Rough",
+     "Smooth"
+    ],
+    "factory_default": "Rough",
+    "pdf_function": "Selects overall sound character from Rough to Smooth"
+   },
+   "Depth Boost": {
+    "position": 9,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Depth Boost"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra resonance on/off"
+   }
+  },
+  "engine_only_positions": {
+   "8": 50.0
+  },
+  "pdf_description": "Based on the famous ENGL Savage 120 E610 amp head (Channel 4, contour off). This replica reproduces the iconic modern German rock sound featuring fast response, enhanced headroom and punchy dynamics.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 19,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Middle,Treble,Voice].factory_default",
+     "knobs[Voice].options"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000062": {
+  "uid": "0x07000062",
+  "uid_int": 117440610,
+  "name": "Engle Saga 2",
+  "role": "Hi-Gain - Engl Savage 120 Contour On",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Input": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the input sensitivity"
+   },
+   "Gain": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount"
+   },
+   "Presence": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 6,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Voice": {
+    "position": 7,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Rough",
+     "Smooth"
+    ],
+    "factory_default": "Rough",
+    "pdf_function": "Selects overall sound character from Rough to Smooth"
+   },
+   "Depth Boost": {
+    "position": 9,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Depth Boost"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra resonance on/off"
+   }
+  },
+  "engine_only_positions": {
+   "8": 50.0
+  },
+  "pdf_description": "Based on the famous ENGL Savage 120 E610 amp head (Channel 4, contour on). This replica reproduces the iconic modern German rock sound featuring fast response, enhanced headroom and punchy dynamics.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 20,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Middle,Treble,Voice].factory_default",
+     "knobs[Voice].options"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000068": {
+  "uid": "0x07000068",
+  "uid_int": 117440616,
+  "name": "Rector Dual V",
+  "role": "Hi-Gain - Mesa Dual Rectifier Vintage",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on an enduring rock'n'roll icon: the legendary Mesa/Boogie Dual Rectifier amp head (CH3, vintage). Music industry genres and scenes have come and gone since its first release in early 1990's, but this amp's monolithic heavy sound continues to be the standard for modern heavy rock.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 19,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000069": {
+  "uid": "0x07000069",
+  "uid_int": 117440617,
+  "name": "Rector Dual M",
+  "role": "Hi-Gain - Mesa Dual Rectifier Modern",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on an enduring rock'n'roll icon: the legendary Mesa/Boogie Dual Rectifier amp head (CH3, modern). Music industry genres and scenes have come and gone since its first release in early 1990's, but this amp's monolithic heavy sound continues to be the standard for modern heavy rock.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 19,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700006B": {
+  "uid": "0x0700006B",
+  "uid_int": 117440619,
+  "name": "Dizzle VH",
+  "role": "Hi-Gain - Diezel VH4",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the 4th channel of the famous Diezel VH4 amp head. Born in 1994, the VH4 set an incredibly high benchmark for boutique multi-channel amps, quickly making it a stage and studio standard.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 20,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700006E": {
+  "uid": "0x0700006E",
+  "uid_int": 117440622,
+  "name": "Boger XT Red",
+  "role": "Hi-Gain - Bogner Ecstasy Red",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the 3rd channel (the red channel) of the famous Bogner Ecstasy head (modern sound character), which has been a favorite for every style and genre of music since 1992.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 18,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000073": {
+  "uid": "0x07000073",
+  "uid_int": 117440627,
+  "name": "Ampage Classic",
+  "role": "Bass - Ampeg SVT",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   1.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount"
+   },
+   "Bass": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Midrange": {
+    "position": 3,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "220Hz",
+     "450Hz",
+     "800Hz",
+     "1.6kHz",
+     "3kHz"
+    ],
+    "factory_default": "450Hz",
+    "pdf_function": "Selects the center frequency of Midrange control: 220Hz/450Hz/800Hz/1.6kHz/3kHz"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Master": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Ampeg SVT bass amp head. Born in 1969, the rich sounding all-tube monster basically defined the bass sound of rock and roll from then on. We modified the Frequency switch with a modern Ampeg design for more tonal flexibility.",
+  "pdf_family": "Bass",
+  "pdf_source_page": 20,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Bass,Middle,Midrange,Treble,Master].factory_default",
+     "knobs[Midrange].options"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000075": {
+  "uid": "0x07000075",
+  "uid_int": 117440629,
+  "name": "Voxy Bass",
+  "role": "Bass - Vox AC-100",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the output volume (post gain)"
+   },
+   "Bass": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the sound characteristics of the legendary VOX AC-100 amp head, the amp that McCartney was using in 1965. The operation is simple: just treble, bass, and volume controls. Using a violin bass with this amp will totally get you THAT vibe.",
+  "pdf_family": "Bass",
+  "pdf_source_page": 20,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Volume,Bass,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x07000089": {
+  "uid": "0x07000089",
+  "uid_int": 117440649,
+  "name": "Petrus Clean",
+  "role": "Clean - Mesa JP-2C CH1",
+  "category": "0x07",
+  "factory_chunk": [
+   25.0,
+   50.0,
+   40.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 25.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 40.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Hotone's next-gen effect algorithms! Leading a qualitative leap in both hearing and playing. This model recreates the sound characteristics of the famous Mesa/Boogie JP-2C amp (CH1), John Petrucci's signature amp head, delivering a crystal-like clean sound with tons of headroom.",
+  "pdf_family": "Clean",
+  "pdf_source_page": 14,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Master,Middle,Treble].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700008A": {
+  "uid": "0x0700008A",
+  "uid_int": 117440650,
+  "name": "Petrus Crunch",
+  "role": "Drive - Mesa JP-2C CH2",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Pull Gain": {
+    "position": 6,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Pull Gain"
+    ],
+    "factory_default": "Pull Gain",
+    "pdf_function": "Turn on for extra gain"
+   },
+   "Pull Pres": {
+    "position": 7,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Pull Pres"
+    ],
+    "factory_default": "Pull Pres",
+    "pdf_function": "Turn on for extra headroom"
+   },
+   "Shred": {
+    "position": 8,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Shred"
+    ],
+    "factory_default": "Shred",
+    "pdf_function": "Turn on for a more shredder-friendly voicing"
+   }
+  },
+  "engine_only_positions": {
+   "9": 1.0,
+   "10": 1.0
+  },
+  "pdf_description": "Hotone's next-gen effect algorithms! Leading a qualitative leap in both hearing and playing. This model recreates the sound characteristics of the famous Mesa/Boogie JP-2C amp (CH2), John Petrucci's signature amp head, delivering a tight, aggressive crunch tone.",
+  "pdf_family": "Drive",
+  "pdf_source_page": 17,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble,Pull Pres,Shred].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0700008B": {
+  "uid": "0x0700008B",
+  "uid_int": 117440651,
+  "name": "Petrus Lead",
+  "role": "Hi-Gain - Mesa JP-2C CH3",
+  "category": "0x07",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the gain amount (pre gain)"
+   },
+   "Presence": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect headroom"
+   },
+   "Master": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output (post gain)"
+   },
+   "Bass": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Pull Gain": {
+    "position": 6,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Pull Gain"
+    ],
+    "factory_default": "Pull Gain",
+    "pdf_function": "Turn on for extra gain"
+   },
+   "Pull Pres": {
+    "position": 7,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Pull Pres"
+    ],
+    "factory_default": "Pull Pres",
+    "pdf_function": "Turn on for extra headroom"
+   },
+   "Shred": {
+    "position": 8,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Shred"
+    ],
+    "factory_default": "Shred",
+    "pdf_function": "Turn on for a more shredder-friendly voicing"
+   }
+  },
+  "engine_only_positions": {
+   "9": 1.0,
+   "10": 1.0
+  },
+  "pdf_description": "Hotone's next-gen effect algorithms! Leading a qualitative leap in both hearing and playing. This model recreates the sound characteristics of the famous Mesa/Boogie JP-2C amp (CH3), John Petrucci's signature amp head, delivering a huge lead tone with clarity that suits for every shredder.",
+  "pdf_family": "Hi Gain",
+  "pdf_source_page": 20,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Gain,Presence,Bass,Middle,Treble,Pull Pres,Shred].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x08000075": {
+  "uid": "0x08000075",
+  "uid_int": 134217845,
+  "name": "Ampage Flip",
+  "role": "Bass - Ampeg B-15 Flip Top",
+  "category": "0x08",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bass": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "2-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Ampeg B-15 \"Flip Top\" bass amp head. Originally designed by Jess Oliver, the easy-to-use amp produces incredible round, full-figured tone for which many have deemed it the holy grail of bass amps. Now it's finally within reach!",
+  "pdf_family": "Bass",
+  "pdf_source_page": 21,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x08000076": {
+  "uid": "0x08000076",
+  "uid_int": 134217846,
+  "name": "Alchemy Pre",
+  "role": "Bass - Alembic F-2B Preamp",
+  "category": "0x08",
+  "factory_chunk": [
+   50.0,
+   0.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Bright": {
+    "position": 1,
+    "encoding": "enum_0_indexed",
+    "options": [
+     "Off",
+     "Bright"
+    ],
+    "factory_default": "Off",
+    "pdf_function": "Switches extra brightness on/off"
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "3-band EQ that controls the effect tone"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Based on the legendary Alembic F-2B rack-mount bass preamp. It recreates the rich, magical tube sound that made the F-2B a classic. This treatment is not just for bass \u2014 it's awesome on guitars (think Gilmour) and more!",
+  "pdf_family": "Bass",
+  "pdf_source_page": 21,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "factory_chunk",
+     "engine_only_positions",
+     "knobs[Bright].factory_default"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0800007A": {
+  "uid": "0x0800007A",
+  "uid_int": 134217850,
+  "name": "AC Pre 1",
+  "role": "Acoustic - AER Colourizer 2 A",
+  "category": "0x08",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Tone Mix": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the tone control balance; set to 0 to disable tone control"
+   },
+   "Tone Depth": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the tone brightness"
+   },
+   "EQ Freq": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the EQ center frequency from 90Hz to 1.6kHz"
+   },
+   "EQ Q": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the EQ bandwidth"
+   },
+   "EQ Gain": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the EQ boost/cut amount; set to 50 to keep neutral"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "An acoustic preamp based on the famous AER Colourizer 2, which makes dull sounds come alive by enriching your acoustic sound with full dynamics and harmonics.",
+  "pdf_family": "Acoustic",
+  "pdf_source_page": 21,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0800007B": {
+  "uid": "0x0800007B",
+  "uid_int": 134217851,
+  "name": "AC Pre 2",
+  "role": "Acoustic - AER Colourizer 2 B",
+  "category": "0x08",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Volume": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the effect output"
+   },
+   "Tone Mix": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the tone control balance; set to 0 to disable tone control"
+   },
+   "Tone Depth": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the tone brightness"
+   },
+   "EQ Freq": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the EQ center frequency from 680Hz to 11kHz"
+   },
+   "EQ Q": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the EQ bandwidth"
+   },
+   "EQ Gain": {
+    "position": 5,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0,
+    "pdf_function": "Controls the EQ boost/cut amount; set to 50 to keep neutral"
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "An acoustic preamp based on the famous AER Colourizer 2, which makes dull sounds come alive by enriching your acoustic sound with full dynamics and harmonics.",
+  "pdf_family": "Acoustic",
+  "pdf_source_page": 21,
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000000": {
+  "uid": "0x0F000000",
+  "uid_int": 251658240,
+  "name": "NAM 1",
+  "role": "Sound Clone slot 1 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 1 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 1 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000001": {
+  "uid": "0x0F000001",
+  "uid_int": 251658241,
+  "name": "NAM 2",
+  "role": "Sound Clone slot 2 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 2 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 2 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000002": {
+  "uid": "0x0F000002",
+  "uid_int": 251658242,
+  "name": "NAM 3",
+  "role": "Sound Clone slot 3 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 3 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 3 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000003": {
+  "uid": "0x0F000003",
+  "uid_int": 251658243,
+  "name": "NAM 4",
+  "role": "Sound Clone slot 4 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 4 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 4 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000004": {
+  "uid": "0x0F000004",
+  "uid_int": 251658244,
+  "name": "NAM 5",
+  "role": "Sound Clone slot 5 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 5 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 5 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000005": {
+  "uid": "0x0F000005",
+  "uid_int": 251658245,
+  "name": "NAM 6",
+  "role": "Sound Clone slot 6 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 6 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 6 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000006": {
+  "uid": "0x0F000006",
+  "uid_int": 251658246,
+  "name": "NAM 7",
+  "role": "Sound Clone slot 7 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 7 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 7 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000007": {
+  "uid": "0x0F000007",
+  "uid_int": 251658247,
+  "name": "NAM 8",
+  "role": "Sound Clone slot 8 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 8 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 8 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000008": {
+  "uid": "0x0F000008",
+  "uid_int": 251658248,
+  "name": "NAM 9",
+  "role": "Sound Clone slot 9 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 9 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 9 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ },
+ "0x0F000009": {
+  "uid": "0x0F000009",
+  "uid_int": 251658249,
+  "name": "NAM 10",
+  "role": "Sound Clone slot 10 of 10. User-loaded NAM (Neural Amp Modeler) capture.",
+  "category": "0x0F",
+  "factory_chunk": [
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   50.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "knobs": {
+   "Gain": {
+    "position": 0,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Volume": {
+    "position": 1,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Bass": {
+    "position": 2,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Middle": {
+    "position": 3,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   },
+   "Treble": {
+    "position": 4,
+    "encoding": "continuous_0_100",
+    "factory_default": 50.0
+   }
+  },
+  "engine_only_positions": {},
+  "pdf_description": "Sound Clone slot 10 of 10. Loads a user-provided NAM (Neural Amp Modeler) capture. Generic 5-knob interface (Gain/Volume/Bass/Middle/Treble) applies to any loaded NAM file regardless of the source amp's native knob layout.",
+  "pdf_family": "Sound Clone",
+  "pdf_source_page": null,
+  "notes_kit": "Sound Clone slot 10 \u2014 user-loaded NAM capture. Contents depend on what the owner imported via Pulze Editor; describe yours in user_layer.json.",
+  "patch_history": [
+   {
+    "date": "2026-05-13",
+    "session": "v7.2 AMP factory_chunk empirical sweep + leftover-artifact cleanup",
+    "verified": true,
+    "fields_changed": [
+     "engine_only_positions"
+    ],
+    "note": "Fresh-load empirical capture from replacement Pulze Mini BLE unit. Non-DSP positions normalized per firmware-leftover principle (doctrine \u00a72.13). EOP schema unified to dict {pos: val}."
+   }
+  ]
+ }
+}
