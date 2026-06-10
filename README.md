@@ -22,6 +22,47 @@ every amp, cab, effect, and knob position on the device. This repo is that groun
 plus the byte-exact writer that turns a recipe into a file, plus the record of how a
 person with zero programming experience got it done by working with an AI.
 
+## What you can ask for
+
+The point of a white-box model is that nothing is off-limits. Every block, knob,
+encoding, and routing rule on the device is machine-readable in this repo, so an AI
+composing with it has free rein over the entire signal chain — anything the firmware
+accepts is fair game, and the firmware accepts everything:
+
+- **Any block order.** All 5,040 orderings of the seven blocks are firmware-legal,
+  and the writer takes a `chain_order` list verbatim. Modulation in front of the amp
+  for vintage univibe throb; delay ahead of the drive for smeared, degraded repeats;
+  cab before amp if you're curious what that does.
+- **Doubled families.** FX1 and FX2 draw from shared pools — stack two reverbs (tight
+  room feeding a huge hall), run two delays (slapback into a long dotted repeat), or
+  pick which of delay and reverb feeds the other.
+- **Blocks on, off, or loaded-off.** Content and enablement are independent: any block
+  can ship fully voiced but bypassed, pre-dialed for the moment you engage it on the
+  device. All seven on, all seven off, any mask in between.
+- **Pedal-level requests.** Ask for "a Klon-style boost into a Plexi" or "a Tube
+  Screamer pushing a tweed" and the names resolve to catalog models — every drive,
+  comp, filter, and modulation entry carries reference text describing what it is and
+  what each knob does, so the AI can look anything up mid-composition instead of
+  guessing.
+- **Artist-grade specificity.** "Dotted-eighth delay in front of the amp, Edge style"
+  yields the right division (`"1/8d"`, sync byte handled), sane feedback, and the
+  chain reorder that puts the echo where it historically sat. "Gilmour lead" gets long
+  repeats and a lush plate behind a flanger. "Surf" gets drippy spring plus tremolo at
+  believable depth and rate. "EVH brown sound" gets the phaser and the tight slapback.
+  "Ambient wash" stacks modulated delay into a long-decay reverb.
+- **Knob-behavior precision.** Ranges, tapers, enum option labels, and factory
+  defaults are all cataloged, so "gate sitting just under pick attack," "presence
+  backed off a touch," or "delay mix at unity" become encoded values, not vibes.
+- **Tone matching.** Describe a recording or name a track and the AI can iterate
+  toward it, because every parameter is visible and writable — matching against a
+  white box instead of poking at a black one. You can also `--decode` any community
+  preset back to an editable recipe and ask for "this, but tighter."
+
+All of it falls out of one fact: the building blocks are fully understood. Once every
+UID, chunk position, encoding, and routing rule is documented, an AI doesn't need
+factory presets to imitate — it composes from first principles, with the whole signal
+chain as legal material. That is where the value of the catalogs lives.
+
 ## The story
 
 I'm a photographer and instrument builder in Los Angeles. I have no coding background.
@@ -30,14 +71,12 @@ byte-level decode, every catalog patch in this repo was written by Claude. What 
 supplied was the device, the evidence, the methodology, the musical judgment, and the
 stubbornness.
 
-The Pulze Mini in question lives on the **Busketeer 9000**, a custom guitar I built with
-a complete 7-pedal analog signal chain inside the body. By the time signal reaches the
-Pulze it has already been through five to seven stages of analog processing, so the
-Pulze's job is everything downstream: amp, cab, modulation, time effects. The device
-has 200 preset slots and a phone app that edits one knob at a time. I wanted a personal
-library organized the way I think — working rig, genre catalog, artist catalog, amp
-study — and there was no programmatic way to make presets. The `.prst` format had no
-public documentation anywhere.
+It started as a personal need. The Pulze Mini sits in my own custom guitar rig (the
+Busketeer 9000), the device has 200 preset slots, and the official editing path is a
+phone app that moves one knob at a time. I wanted a library organized the way I think,
+and there was no programmatic way to make presets — the `.prst` format had no public
+documentation anywhere. What came out of solving that personal problem is general: a
+complete white-box model of the device that can compose any tone for anyone.
 
 So the question became: can a non-programmer reverse-engineer a proprietary binary
 format using an AI as the hands? The honest answer, twenty-some chat sessions later, is
@@ -59,24 +98,13 @@ voice-note dictation, which is why the project's internal records are full of ar
 like "pose mini" (Pulze Mini), "grab cab" (Custom IR), and "musketeer" (the guitar).
 The AI learned to read through the noise.
 
-The private side of the project — a 170-preset library across four tiers, a composition
-doctrine that encodes how presets should be voiced around my specific instrument —
-stays private. What you're looking at is the public core: the format knowledge, the
-catalogs, the writer, the decoder, and the verification suite, with device-factory
-defaults and none of my personal tone rules. Publishing it at all was inspired by
+The private side of the project — a 170-preset library across four tiers and a
+composition doctrine tuned to my own rig — stays private. What you're looking at is
+the general engine underneath it: the format knowledge, the catalogs, the writer, the
+decoder, and the verification suite, with device-factory defaults and no personal tone
+rules baked in. Publishing it at all was inspired by
 [THR-tone-architect](https://github.com/mctozal/THR-tone-architect), which proved that
 a hobbyist reverse-engineering toolkit for a single amp is worth shipping properly.
-
-One more thing belongs in the story, because leaving it out would be dishonest: the AI
-was wrong, repeatedly, and catching it was half the work. It once invented a
-"quantized 4-position knob" out of nothing because the numbers looked pretty, dressed
-the invention up with plausible analysis, and asked me to verify it. Two exported sweep
-files killed the claim in one turn. Another time it convinced itself thirty turns deep
-that a whole archive of work was missing, when its own extraction command had silently
-truncated. The project's most durable lesson: **AI confidence is uncorrelated with AI
-accuracy.** Everything either of us believed was treated as a hypothesis until the
-device confirmed it in bytes. That stance, not any single decode, is what made the
-output trustworthy.
 
 ## How the format was deciphered — working with an AI on an undocumented binary
 
@@ -154,7 +182,7 @@ Nothing is "done" at "the script ran without errors."
 
 None of this is vibe coding. Vibe coding's defining feature is the absence of
 verification; this project has verification at every layer, against the physical
-device, with the AI's own claims as the most frequently falsified hypotheses. But it
+device. But it
 isn't conventional programming either — I can't audit the Python at the syntax level
 and never tried to. The clean division of labor was the point: the AI did the
 syntactic work; I did the empirical and architectural work; neither tried to do the
@@ -335,9 +363,8 @@ gate the project ran after every catalog or writer change. CI runs it on every p
   full UID overlap, identical stock chain.
 - Engine-only chunk positions (DSP-read values with no UI knob) are preserved per the
   catalogs; wild-file leftovers are deliberately not treated as defaults.
-- Where a document and the device disagreed — including this project's own earlier
-  documents, and the AI's own claims — the device won, every time. The catalogs encode
-  only what survived that filter.
+- Where any document and the device disagreed, the device won, every time. The
+  catalogs encode only what survived that filter.
 
 ## Credits
 
@@ -392,6 +419,10 @@ MIT — see [LICENSE](LICENSE).
 - 安装：纯标准库 Python 3.9+，零依赖。`python3 -m pulze_tone --list` 自检；
   `--spec 配方.json -o output` 生成；`--decode 文件.prst` 反解为可编辑配方。
 - 生成的文件用 **Pulze Editor** 导入设备并存入用户槽位。
+- **白盒自由度：** 七个模块任意排序（共 5040 种顺序全部合法，调制放前级、箱体放放大器
+  之前都行）；FX1/FX2 共享效果池，可叠两个混响或两个延迟；模块可"装载但旁通"；可用
+  踏板语言点名（Klon 类、TS 类自动映射到目录型号）；按艺术家描述自动给出正确的附点
+  延迟与链位；也可让 AI 对照录音做音色匹配，或用 `--decode` 反解社区预设再修改。
 
 **声明：** 独立非官方项目，与 Hotone Audio 无关联。"Pulze""Hotone" 为长沙乐瞳
 （Hotone Audio）商标。格式与映射均来自作者自有设备与文件的互操作性研究。
