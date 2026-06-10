@@ -46,6 +46,15 @@ accepts is fair game, and the firmware accepts everything:
   comp, filter, and modulation entry carries reference text describing what it is and
   what each knob does, so the AI can look anything up mid-composition instead of
   guessing.
+- **Real-gear translation.** The agent is also the translator layer: ask in the names
+  you actually know — "a Marshall plexi," "a Fender Twin," "a Vox top boost" — and it
+  maps them to the Hotone equivalents (Marshell for Marshall, and so on), because
+  every catalog entry carries its real-world inspiration in the reference text. You
+  never have to learn the device's renamed menu.
+- **Context-aware chains.** Tell it the setting and the same request comes back voiced
+  for it, case by case: bedroom solo gets the wide, lush wet and the full low end; a
+  full band mix gets carved mids, a tighter low cut, and drier tails so the part sits
+  instead of smearing.
 - **Artist-grade specificity.** "Dotted-eighth delay in front of the amp, Edge style"
   yields the right division (`"1/8d"`, sync byte handled), sane feedback, and the
   chain reorder that puts the echo where it historically sat. "Gilmour lead" gets long
@@ -80,7 +89,9 @@ Special, an optical phase-and-gain whammy, onboard percussion elements, 2 active
 circuits and 1 passive circuit with treble shaping and optical presence stages, and an
 onboard EP > COMP > TS > MUFF > QDD > LOOP > Pulze signal chain, and more), the device
 has 200 preset slots, and the official editing path is a phone app that moves one knob
-at a time. I wanted a library organized the way I think,
+at a time. Hotone ships no desktop editor at all — that phone app is the only official
+tool that exists — so there was never an easier door to look for: everything had to
+come out of mobile exports. I wanted a library organized the way I think,
 and there was no programmatic way to make presets — the `.prst` format had no public
 documentation anywhere. What came out of solving that personal problem is general: a
 complete white-box model of the device that can compose any tone for anyone.
@@ -111,7 +122,10 @@ a hobbyist reverse-engineering toolkit for a single amp is worth shipping proper
 
 There was no spec. There was a device, a phone app that could export and import
 `.prst` files, and an AI that could read whatever I uploaded. The whole method grew
-from that triangle. These are the techniques, in roughly the order they were invented:
+from that triangle — and from one constraint: with zero coding experience, a visual
+sweep was the only investigative move I logically knew how to make. So the method
+became making sweeps count. There was a lot of sweeping; all of it was targeted.
+These are the techniques, in roughly the order they were invented:
 
 **The Rosetta Stone.** Wipe the device, export the factory-default preset, and treat
 it as the canonical reference: every slot at a known model, every chunk in a known
@@ -470,7 +484,9 @@ MIT — see [LICENSE](LICENSE).
 - 生成的文件用 **Pulze Editor** 导入设备并存入用户槽位。
 - **预期用法：** 通过 Claude（内置技能）或任意 AI 代理对话式生成；首次使用有一段
   引导式基线问答，可用任何自然语言自由作答 —— 不限定标准答案，代理会理解上下文并随时
-  按你的话修改；命令行仅作为最简手动通道。
+  按你的话修改；命令行仅作为最简手动通道。可直接说真实型号名（如 Marshall、Fender
+  Twin），代理自动映射到 Hotone 等价型号（Marshell 等），并按独奏或乐队合奏等使用场景
+  逐例调整信号链。
 - **白盒自由度：** 七个模块任意排序（共 5040 种顺序全部合法，调制放前级、箱体放放大器
   之前都行）；FX1/FX2 共享效果池，可叠两个混响或两个延迟；模块可"装载但旁通"；可用
   踏板语言点名（Klon 类、TS 类自动映射到目录型号）；按艺术家描述自动给出正确的附点
