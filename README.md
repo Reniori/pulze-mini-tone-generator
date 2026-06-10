@@ -65,18 +65,22 @@ chain as legal material. That is where the value of the catalogs lives.
 
 ## The story
 
-I'm a photographer and instrument builder in Los Angeles. I have no coding background.
+I'm a photographer and hobbyist builder in Los Angeles. I have no coding background.
 Across this entire project I never wrote a line of code — every Python script, every
 byte-level decode, every catalog patch in this repo was written by Claude. What I
 supplied was the device, the evidence, the methodology, the musical judgment, and the
 stubbornness.
 
 It started as a personal need. The Pulze Mini sits in my own custom guitar rig (the
-Busketeer 9000), the device has 200 preset slots, and the official editing path is a
-phone app that moves one knob at a time. I wanted a library organized the way I think,
-and there was no programmatic way to make presets — the `.prst` format had no public
-documentation anywhere. What came out of solving that personal problem is general: a
-complete white-box model of the device that can compose any tone for anyone.
+Busketeer 9000, a guitar with 5 pickups across piezo and magnetic, optical phase and
+gain whammy, 19k Super humbucker configuration, onboard precussion elements, magnetic
+phase interaction like the red special, 2 active circuits, 1 passive circuit, and
+EP > COMP > TS > MUFF > QDD > LOOP > Pulze signal chain, and more), the device has 200
+preset slots, and the official editing path is a phone app that moves one knob at a
+time. I wanted a library organized the way I think, and there was no programmatic way
+to make presets — the `.prst` format had no public documentation anywhere. What came
+out of solving that personal problem is general: acomplete white-box model of the device
+that can compose any tone for anyone.
 
 So the question became: can a non-programmer reverse-engineer a proprietary binary
 format using an AI as the hands? The honest answer, twenty-some chat sessions later, is
